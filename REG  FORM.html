@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Registration Form</title>
+  <style>
+    body {
+      font-family: "Times New Roman", serif;
+      
+    }
+    h1 {
+      text-align: center;
+    }
+    th {
+      text-align: left;
+      
+    }
+    input[type="text"], input[type="email"], input[type="password"], input[type="tel"] {
+      width: 300px;
+    }
+    tr{
+        margin:40px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Student Registration Form</h1>
+
+  <form>
+    <table style="margin-left:280px;">
+
+      <tr>
+        <th>Roll no. :</th>
+        <td><input type="text" name="roll"></td>
+      </tr>
+
+      <tr>
+        <th>Student name :</th>
+        <td>
+          <input type="text" name="fname" placeholder="First Name" style="width:140px;"> -
+          <input type="text" name="lname" placeholder="Last Name" style="width:140px;">
+        </td>
+      </tr>
+
+      <tr>
+        <th>Father's name :</th>
+        <td><input type="text" name="father"></td>
+      </tr>
+
+      <tr>
+        <th>Date of birth :</th>
+        <td>
+          <select name="day">
+            <option>Day</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+          </select>
+
+          <select name="month">
+            <option>Month</option>
+            <option>January</option>
+            <option>February</option>
+            <option>March</option>
+            <option>April</option>
+            <option>May</option>
+            <option>June</option>
+            <option>July</option>
+            <option>August</option>
+            <option>September</option>
+            <option>October</option>
+            <option>November</option>
+            <option>December</option>
+          </select>
+
+          <select name="year">
+            <option>Year</option>
+            <option>2008</option>
+            <option>2007</option>
+            <option>2006</option>
+            <option>2005</option>
+            <option>2004</option>
+            <option>2003</option>
+            <option>2002</option>
+            <option>2001</option>
+            <option>2000</option>
+          </select>
+
+          <I>(DD-MM-YYYY)</I>
+        </td>
+      </tr>
+
+      <tr>
+        <th>Mobile no. :</th>
+        <td>
+          <input type="text" value="+91" size="3" style="width:45px;"> 
+          <input type="number" name="mobile" size="10" style="width:235px;">
+        </td>
+      </tr>
+
+      <tr>
+        <th>Email id :</th>
+        <td><input type="email" name="email"></td>
+      </tr>
+
+      <tr>
+        <th>Password :</th>
+        <td><input type="password" name="password"></td>
+      </tr>
+
+      <tr>
+        <th>Gender :</th>
+        <td>
+          <input type="radio" name="gender" > <b>Male</b>
+          <input type="radio" name="gender" > <b>Female</b>
+        </td>
+      </tr>
+
+      <tr>
+        <th>Department :</th>
+        <td>
+          <input type="checkbox" name="dept" > <b>CSE</b>
+          <input type="checkbox" name="dept" > <b>IT</b>
+          <input type="checkbox" name="dept" > <b>ECE</b>
+          <input type="checkbox" name="dept" > <b>Civil</b>
+          <input type="checkbox" name="dept" > <b>Mech</b>
+        </td>
+      </tr>
+
+      <tr>
+        <th>Course :</th>
+        <td>
+          <select name="course" style="width: 300px;">
+            <option>-------------- Select Current Course's --------------</option>
+            <option>B.Tech</option>
+            <option>B.E</option>
+            <option>M.Tech</option>
+            <option>MCA</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <th>Student photo :</th>
+        <td><input type="file" name="photo"></td>
+      </tr>
+
+      <tr>
+        <th>City :</th>
+        <td><input type="text" name="city"></td>
+      </tr>
+
+      <tr>
+        <th valign="top">Address :</th>
+        <td><textarea name="address" rows="3" cols="39"></textarea></td>
+      </tr>
+
+      <tr>
+        <td></td>
+        <td>
+          <input type="submit">
+          <input type="reset">
+        </td>
+      </tr>
+
+    </table>
+  </form>
+
+</body>
+</html>
